@@ -1,0 +1,242 @@
+/* font-family: 'Bebas Neue', cursive; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-content{
+    margin: 0 auto;
+    width: 800px;
+}
+
+.bg-color{
+    background-color: rgb(237, 237, 237);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.header h1{
+    letter-spacing: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li a{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 18px;
+    color: inherit;
+}
+
+.main-area{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: 80vh;
+
+}
+
+.result-area{
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 100%;
+}
+
+.result-footer{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-area: "gender age age-range";
+    text-align: center;
+}
+
+.gender h3{
+    margin: 10px;
+}
+
+.gender img{
+    /* border: 1px solid red; */
+    max-height: 60%;
+    max-width: 50%;
+}
+
+.age h3{
+    margin: 10px;
+}
+
+.age img{
+    /* border: 1px solid red; */
+    max-height: 60%;
+    max-width: 50%;
+}
+
+.age-range h3{
+    margin: 10px;
+}
+
+.age-range img{
+    /* border: 1px solid red; */
+    max-height: 60%;
+    max-width: 50%;
+}
+
+
+/* .age{
+    background-color: orange;
+}
+.gender{
+    background-color: purple;
+}
+.age-range{
+    background-color: blue;
+} */
+
+.getter-area{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.getter-area-top{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.getter-area-top p{
+    font-size: 20px;
+}
+
+.getter-area-bottom{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.getter-area-bottom h3{
+    font-size: 25px;
+}
+
+.getter-area-bottom p{
+    font-size: 20px;
+
+}
+
+.birth-year{
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.btn-calc{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-calc:hover{
+    color: #fff;
+    background-color: red;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.image{
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.image img{
+    width: 100%;
+}
+
+.footer{
+    margin: 5px auto;
+    width: 800px;
+    text-align: center;
+    line-height: 40px;
+    /* background-color: gray; */
+}
+
+.get-gender{
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .main-content{
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .main-area{
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 80vh;
+    
+    }
+
+    .gender h3{
+        margin: 10px;
+        font-size: 15px;
+    }
+    .age h3{
+        margin: 10px;
+        font-size: 15px;
+    }
+    .age-range h3{
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .getter-area-top{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .image{
+        margin: auto;
+        width: 100%;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+}

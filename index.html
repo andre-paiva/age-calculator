@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Age Calculator</title>
+</head>
+<body>
+
+        <div class="bg-color">
+            <header class="header main-content">
+                <h1>Age.Cal</h1>
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <main class="main-area main-content">
+            <section class="result-area">
+                <div class="image">
+                    <img class="image1" src="assets/img/man.svg" alt="">
+                </div>
+
+                <div class="result-footer">
+                    <div class="gender">
+                        <h3 class="gender1">Gender</h3>
+                        <img src="assets/img/gender.png" alt="">
+                    </div>
+                    <div class="age">
+                        <h3 class="age1">Age</h3>
+                        <img src="assets/img/age.png" alt="">
+                    </div>
+                    <div class="age-range">
+                        <h3 class="age-range1">Age Group</h3>
+                        <img src="assets/img/age-group.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="getter-area">
+                <div class="getter-area-top">
+                    <h2>Welcome!</h2>
+                    <p>Let's check your age?</p>
+                </div>
+                <div class="getter-area-bottom">
+                    <h3>So let's go!</h3>
+                    <p>Type your year of birth</p>
+                    <div>
+                        <input class="birth-year" type="text" name="year" id="year" placeholder="type here">
+                    
+                    </div>
+
+                    <p>What's your gender?</p>
+                    <div class="get-gender">
+                        <input type="radio" name="radsex" id="masc" checked>
+                        <label for="masc">Male</label>
+                        <input type="radio" name="radsex" id="fem">
+                        <label for="fem">Female</label>
+                    </div>
+                    <button class="btn-calc" onclick="calcEvent()">Do It!</button>
+                </div>
+            </section>
+            
+        </main>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
